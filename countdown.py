@@ -25,7 +25,7 @@ class CountDown:
             raise urwid.ExitMainLoop()
 
     def setup_view(self):
-        color = 'start' if self.seconds > 5 else 'finish'
+        color = 'start' if self.seconds > 3 else 'finish'
         self.count_text = urwid.BigText(
             time.strftime('%H:%M:%S', time.gmtime(self.seconds)),
             urwid.font.HalfBlock6x5Font())
